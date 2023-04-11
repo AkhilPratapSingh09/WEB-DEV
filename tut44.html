@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section aside '
+            
+            'footer footer footer footer'
+            ;
+
+        }.item{
+            background-color: yellow;
+            border: 3px solid black;
+            padding: 12px 23px;
+        }#navbar{
+            grid-area: navbar;
+        }#section{
+            grid-area: section;
+        }#aside{
+            grid-area: aside;
+            
+        }footer{grid-area: footer;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            Home About Contact Us
+        </div>
+        <div id="section" class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime expedita, alias quod numquam optio est soluta repudiandae! Eum incidunt repellat officiis quod. Odit repellat et vel quae nulla accusantium! Quas, laboriosam? Natus, eaque quae?</div>
+        <div class="aside" class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea repudiandae aliquam dicta. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo a ullam, dolor repellat et neque, quas harum odit eum consequuntur aliquam sapiente, illum perspiciatis ratione numquam? Laboriosam libero aliquid repellat?</div>
+
+        <!-- <div class="item">Item1</div>
+        <div class="item">Item2</div>
+        <div class="item">Item3</div>
+        <div class="item">Item4</div>
+        <div class="item">Item5</div>
+        <div class="item">Item6</div>
+        <div class="item">Item7</div>
+        <div class="item">Item8</div>
+        <div class="item">Item9</div>
+        <div class="item">Item10</div>
+        <div class="item">Item11</div>
+        <div class="item">Item12</div>
+        <div class="item">Item13</div>
+        <div class="item">Item14</div> -->
+    </div>
+    <footer class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nam iste et!</footer>
+</body>
+</html>

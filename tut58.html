@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js  set time out/ claertimeout</title>
+</head>
+<body>
+    <div class="container">
+        This is a container
+    </div>
+    <script>
+        console.log("This is tutorial 58");
+
+        function greet(name, byetext){
+            console.log("Hello Good Morning" + name + " "+ byetext);
+        
+        }
+        // setTimeout(greet, 5000, "Akhil", "Take CAre");
+        // console.log(timeOut)
+
+        timeOut =setTimeout(greet, 5000, "Akhil", "Take CAre");
+        console.log(timeOut)
+
+        clearTimeout(timeOut);
+    </script>
+</body>
+</html>

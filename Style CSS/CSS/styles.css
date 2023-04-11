@@ -1,0 +1,26 @@
+h1{
+    color: brown;
+}
+
+img :hover{
+    background-color: pink;
+}
+
+/*Class Selector*/
+
+.backon{
+    background-color: yellow;
+}
+.gobhi{
+    background-color: blue;
+}
+.circular{
+    border-radius: 100px;
+}
+
+/* ID selectors */
+
+#Heading{
+    color: burlywood;
+}
+

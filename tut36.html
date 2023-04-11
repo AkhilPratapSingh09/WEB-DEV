@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes and Animations</title>
+     
+</head>
+<style>
+    .container{
+        display:flex;
+        background-color: greenyellow;
+    }.box{
+        background-color: green;
+        width: 250px;
+        height: 250px;
+        position: relative;
+        animation-name: akhil1;
+        animation-duration: 2s;
+        animation-iteration-count: 3;
+        
+    }
+    @keyframes akhil1{
+        from{
+            width: 200px;
+
+        }to{
+            width: 400px;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box">
+            This is a box
+        </div>
+    </div>
+</body>
+</html>

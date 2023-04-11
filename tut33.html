@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before And after psuedo selectors</title>
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
+    <style>
+        body{margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            
+        }header::before{
+            background: url('https://source.unsplash.com/collection/190727/1600*900') no-repeat center center /cover;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+        .navigation{
+            font-family: 'Bree Serif', serif;
+            font-size: 20px;
+            display: flex;
+        }li{
+            list-style: none;
+            padding: 34px 23px;
+        }
+        section{
+            height: 344px;
+            font-family: 'Bree Serif', serif;
+            margin: 3px 23px;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+           
+            align-items: center;
+        }h1{
+            font-size: 4rem;
+        }p{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+        
+    </header>
+    <section>
+        <h1>Welcome to coding world</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam placeat, inventore eaque a est nostrum deleniti illo eligendi accusantium vero quasi maiores voluptates dolores commodi quam modi sit porro itaque accusamus nam soluta minima.</p>
+    </section>
+</body>
+</html>
